@@ -1,4 +1,4 @@
-//Link: 
+//Link: https://www.youtube.com/watch?v=mCS4FL2WMKA
 int cols = 40;  // número de columnas
 int rows = 20;  // número de filas
 float circleSize;
@@ -31,7 +31,7 @@ void drawGrid() {
       fill(lerpColor(startColor, endColor, lerpFactor));
       stroke(borderColor); // Establece el color del borde
 
-      pushMatrix(); //Guardar la información de los circulos
+      pushMatrix(); //Guardar la información de los círculos
   
       translate(x * circleSize + circleSize / 2 + width / 2, y * circleSize + circleSize / 2);
       rotate(radians(45));   // Rotarlo
