@@ -31,19 +31,12 @@ void drawGrid() {
       fill(lerpColor(startColor, endColor, lerpFactor));
       stroke(borderColor); // Establece el color del borde
 
-      // Guardar la matriz de transformación actual
-      pushMatrix();
-      
-      // Trasladar el punto de origen al centro del círculo
+      pushMatrix(); //Guardar la información de los circulos
+  
       translate(x * circleSize + circleSize / 2 + width / 2, y * circleSize + circleSize / 2);
+      rotate(radians(45));   // Rotarlo
+      ellipse(0, 0, circleSize * 1.2, circleSize * 0.8); // 
 
-      // Rotar el círculo sobre su propio eje diagonal
-      rotate(radians(45));
-
-      // Dibujar el elipse (geoide)
-      ellipse(0, 0, circleSize * 1.2, circleSize * 0.8); // Geoide
-
-      // Restaurar la matriz de transformación original
       popMatrix();
     }
   }
